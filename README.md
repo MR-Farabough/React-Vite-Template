@@ -40,11 +40,20 @@ The `predeploy` script runs automatically before `deploy` is run
 
 > If you are using client side routing and hosting on gh-pages you must use `HashRouter` instead of `BrowserRouter`
 
+Create an `.htaccess` that contains the following
+
+<pre>
+Options -MultiViews
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.html [QSA,L]
+</pre>
+
 ## Step Four
 
 Compile the build
 
-<pre>`npm run build`</pre>
+<pre>npm run build</pre>
 
 ## Step Five
 
