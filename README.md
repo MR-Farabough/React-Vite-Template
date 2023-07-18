@@ -57,7 +57,7 @@ Compile the build
 
 ## Step Five
 
-Make sure gut knows about your subtree
+Make sure git knows about your subtree
 
 <pre>git add dist && git commit -m "Initial dist subtree commit"</pre>
 
